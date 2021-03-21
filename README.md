@@ -19,3 +19,5 @@ A working exploit may be found in `/.exploit`
 2. Enter the directory: `cd order`
 3. Run `./start-docker.sh`
 4. _Optional: Run `./get-ip-docker.sh` to find the container's IP_
+
+The app is available at: `http://IP:5000/`
