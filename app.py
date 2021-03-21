@@ -19,8 +19,6 @@ def index():
         cur.execute("SELECT * FROM users WHERE username=%(u)s AND password=%(p)s",
                     {'u':'admin','p':request.form['password']})
         rows = cur.fetchall()
-        for row in rows:
-            print(row)
         conn.close()
         return render_template('index.html', success=(1 if len(rows)>0 else -1))
 
